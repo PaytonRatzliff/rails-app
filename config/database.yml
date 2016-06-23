@@ -32,6 +32,6 @@ production:
   reconnet: false
   database: db/production.sqlite3
   pool: 5
-  username: pratz
+  username: root
   password: <%= begin IO.read("/home/my_deploy_user/.db") rescue "" end %>
   host: localhost
