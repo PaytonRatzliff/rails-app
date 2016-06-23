@@ -33,5 +33,5 @@ production:
   database: db/production.sqlite3
   pool: 5
   username: root
-  password: <%= ENV['MYSQL_CAP_PWORD'] %>
+  password: <%= begin IO.read("/home/my_deploy_user/.db") rescue "" end %>
   host: localhost
