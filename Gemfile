@@ -52,3 +52,5 @@ group :development do
 end
 
 gem 'puma'
+
+gem 'mysql2'
