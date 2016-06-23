@@ -30,7 +30,7 @@ production:
   adapter: mysql2
   encoding: utf8
   reconnet: false
-  database: db/production.sqlite3
+  database: db_app_production
   pool: 5
   username: root
   password: <%= begin IO.read("/home/pratz/.db") rescue "" end %>
