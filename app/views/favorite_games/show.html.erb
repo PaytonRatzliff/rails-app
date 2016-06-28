@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Game:</strong>
+  <%= @favorite_game.Game %>
+</p>
+
+<p>
+  <strong>Hours played:</strong>
+  <%= @favorite_game.hours_played %>
+</p>
+
+<%= link_to 'Edit', edit_favorite_game_path(@favorite_game) %> |
+<%= link_to 'Back', favorite_games_path %>

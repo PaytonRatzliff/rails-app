@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Game: Good Times
+  hours_played: 0
+
+two:
+  Game: Bad Times
+  hours_played: 9001
+
+three:
+  Game: Meh Times
+  hours_played: 42
+
+four:
+  Game:
+  hours_played: 3

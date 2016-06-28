@@ -1,0 +1,25 @@
+<%= form_for(@favorite_game) do |f| %>
+  <% if @favorite_game.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@favorite_game.errors.count, "error") %> prohibited this favorite_game from being saved:</h2>
+
+      <ul>
+      <% @favorite_game.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Game %><br>
+    <%= f.text_field :Game %>
+  </div>
+  <div class="field">
+    <%= f.label :hours_played %><br>
+    <%= f.number_field :hours_played %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

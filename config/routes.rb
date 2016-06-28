@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :favorite_games
   get 'welcome/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
